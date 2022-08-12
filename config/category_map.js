@@ -33,7 +33,7 @@ const mapping = {
 
     'bbq':                      ['recreation'],
     'dojo':                     ['recreation'],
-    'gym':                      ['recreation'],
+    'gym':                      ['recreation', 'gym'],
 
     'place_of_worship':         ['religion'],
 
@@ -44,17 +44,17 @@ const mapping = {
     'planetarium':              ['education','entertainment'],
     'theatre':                  ['education','entertainment'],
     'college':                  ['education'],
-    'kindergarten':             ['education'],
-    'school':                   ['education'],
+    'kindergarten':             ['education', 'kindergarten'],
+    'school':                   ['education', 'school'],
     'university':               ['education'],
 
-    'bar':                      ['nightlife'],
-    'biergarten':               ['nightlife','food'],
-    'cinema':                   ['entertainment','nightlife'],
-    'casino':                   ['nightlife'],
-    'gambling':                 ['nightlife'],
+    'bar':                      ['nightlife', 'bar'],
+    'biergarten':               ['nightlife','food', 'bar'],
+    'cinema':                   ['entertainment','nightlife', 'cinema'],
+    'casino':                   ['nightlife', 'casino'],
+    'gambling':                 ['nightlife', 'casino'],
     'nightclub':                ['nightlife'],
-    'pub':                      ['nightlife'],
+    'pub':                      ['nightlife', 'bar'],
 
     'courthouse':               ['government'],
     'embassy':                  ['government'],
@@ -67,8 +67,8 @@ const mapping = {
 
     'coworking_space':          ['professional'],
 
-    'atm':                      ['finance'],
-    'bank':                     ['finance','professional'],
+    'atm':                      ['finance', 'bank', 'atm'],
+    'bank':                     ['finance', 'bank', 'professional'],
     'bureau_de_change':         ['finance','professional'],
 
     'clinic':                   ['health'],
@@ -80,12 +80,12 @@ const mapping = {
     'social_facility':          ['health'],
     'veterinary':               ['professional'],
 
-    'cafe':                     ['food','retail'],
-    'fast_food':                ['food','retail'],
-    'food_court':               ['food','retail'],
-    'ice_cream':                ['food','retail'],
+    'cafe':                     ['food','retail', 'cafe'],
+    'fast_food':                ['food','retail', 'restaurant'],
+    'food_court':               ['food','retail', 'restaurant'],
+    'ice_cream':                ['food','retail', 'ice_cream'],
     'marketplace':              ['food','retail'],
-    'restaurant':               ['food','retail','nightlife'],
+    'restaurant':               ['food','retail','nightlife', 'restaurant'],
 
     'bus_station':              ['transport','transport:public','transport:bus'],
     'taxi':                     ['transport','transport:taxi'],

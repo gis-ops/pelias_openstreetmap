@@ -22,7 +22,13 @@ const whitelist = [
   // COVID-19
   'opening_hours:covid19',
   'delivery:covid19',
-  'safety:mask:covid19'
+  'safety:mask:covid19',
+
+  // client
+  'capacity',
+  'socket_type',
+  'fee',
+  'charge'
 ];
 
 module.exports = function(){
