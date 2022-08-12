@@ -92,7 +92,7 @@ const mapping = {
 
     'car_rental':               ['transport','professional'],
     'car_wash':                 ['professional'],
-    'charging_station':         ['transport','professional'],
+    'charging_station':         ['transport','professional', 'charging_station'],
     'fuel':                     ['transport','professional'],
 
     'ferry_terminal':           ['transport','transport:sea']
